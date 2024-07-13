@@ -1,28 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jolivara's Wellness Genie</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="container">
-        <img src="images/logo.png" alt="Logo" class="logo">
-        <img src="images/Jolivara panda.jpg" alt="Top Right Image" class="top-right-image">
-        <h1>Jolivara's Wellness Genie</h1>
-        <p class="intro-text">
-            Ready for a daily dose of joy? Meet our Wellness Genie, your magical companion for a happier you! Summon the Genie each day for an exciting wellness challenge. Whether you're feeling fantastic or need a little spark, our Genie's got your back. Embrace the adventure and boost your mood. Let's make every day amazing together. Go on, give it a whirl! 😊🌈"
-        </p>
-        <button id="askButton">Ask the Genie</button>
-        <div id="activity"></div>
-        <div id="message"></div>
-    </div>
-    <script defer src="script.js"></script>
-    <footer>
-        <p class="email-contact">Help Us Grow & Share Ideas: <a href="mailto:genie@jolivara.com">genie@jolivara.com</a></p>
-        <a href="https://x.com/jolivara_zen" target="_blank" class="x-icon">X</a>
-</footer>
-</body>
-</html>
+<html lang="en" class="h-100">
 
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <script src="./library/js/color-modes.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Jolivara">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <header class="mb-auto">
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="d-flex align-items-center">
+        <img src="images/logo.png" alt="Jolivara Logo" class="me-3" style="height: 90px; width: auto;">
+    </div>
+  </header>
+
+  <title>J2</title>
+  <link href="./library/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./library/css/cover.css" rel="stylesheet">
+  <link href="./css/custom.css" rel="stylesheet">
+
+</head>
+
+<body class="d-flex h-100 text-center">
+
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="mb-auto">
+      <div>
+        <!--</div><h3 class="float-md-start mb-0">Jolivara</h3>-->
+        <!--<nav class="nav nav-masthead justify-content-center float-md-end">
+          <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="https://jolivara.com">Home</a>
+          <a class="nav-link fw-bold py-1 px-0" href="https://jolivara.com">Features</a>
+          <a class="nav-link fw-bold py-1 px-0" href="https://jolivara.com">Contact</a>
+        </nav>-->
+      </div>
+    </header>
+
+    <main class="px-3">
+      <h1 class="mb-4" style="color: #5B5A5B;">Jolivara's Wellness Genie</h1>
+      <p class="lead mb-5" style="color: #5B5A5B;">Ready for a daily dose of joy? Meet our Wellness Genie, your magical
+        companion for a happier you! Summon the Genie each day for an exciting wellness challenge. Whether you're
+        feeling fantastic or need a little spark, our Genie's got your back. Embrace the adventure and boost your mood.
+        Let's make every day amazing together. Go on, give it a whirl! 😊🌈</p>
+      <p class="lead">
+        <button id="askButton" class="btn btn-lg fw-bold mb-4" style="background-color: #5B5A5B; color: #fff; border-color: #5B5A5B;">
+          <i class="fas fa-magic me-2"></i> Ask the Genie
+        </button>
+      <div id="activityBox" class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg" hidden>
+        <p id="activity"></p>
+        <p class="encouragement">Enjoy today's activity and we will see you again tomorrow :) Have a great day!</p>
+      </div>
+      <div id="message"></div>
+      </p>
+
+    </main>
+
+    <footer class="mt-auto">
+      <p>Zen tools <a href="https://jolivara.com/" class="">Wellness Genie</a>, by <a
+          href="https://twitter.com/jolivara_zen" class="">@jolivara_zen</a>.</p>
+    </footer>
+  </div>
+  <script src="./library/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/script.js"></script>
+
+</body>
+
+</html>

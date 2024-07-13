@@ -1,0 +1,190 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FEF3EE; /* Background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    position: relative; /* Ensure body acts as a reference for absolute positioning */
+}
+
+.container {
+    text-align: center;
+    margin-top: 20px; /* Add some top margin to the container */
+    max-width: calc(100% - 10cm); /* Set maximum width, deducting 5cm from both sides */
+    margin-left: 5cm; /* Margin on the left */
+    margin-right: 5cm; /* Margin on the right */
+    padding: 0 20px; /* Padding inside container */
+}
+
+.logo {
+    width: 130px; /* Width of the logo */
+    height: auto; /* Maintain aspect ratio */
+    position: absolute; /* Position the logo absolutely */
+    top: 10px; /* Adjust top position */
+    left: 10px; /* Adjust left position */
+}
+
+h1 {
+    margin-bottom: 50px; /* Increased the gap between header and black box */
+    color: #5B5A5B; /* Font color of the header */
+    font-size: calc(100% + 20px); /* Increased font size by 20% */
+}
+
+.intro-text {
+    margin-top: 25 px; 
+    margin-bottom: 40px;
+    color: #5B5A5B;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.activities {
+    margin-top: 40px; /* Margin top for activities section */
+    text-align: left; /* Align text to the left */
+}
+
+.activities h2 {
+    font-size: 24px; /* Header font size */
+    color: #5B5A5B; /* Header color */
+    margin-bottom: 10px; /* Bottom margin for header */
+}
+
+.activities ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+}
+
+.activities li {
+    font-size: 16px; /* Font size of activities */
+    margin-bottom: 8px; /* Bottom margin for activities */
+}
+
+button {
+    padding: 18px 36px; /* Increased padding for the button */
+    font-size: calc(16px + 20%); /* Increased font size by 20% */
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #5B5A5B; /* Background color of the button */
+    color: #fff; /* Font color of the button */
+    margin-top: 24px; /* Increased gap between header and button by 20% */
+}
+
+button:hover {
+    background-color: #494849; /* Darker shade of the button color for hover */
+}
+
+#activity {
+    margin-top: 40px; /* Increased gap between button and answer */
+    font-size: calc(100% + 20px); /* Set font size same as h1 */
+    color: #fff; /* Font color of the answer */
+    background-color: rgba(91, 90, 91, 0.8); /* Semi-transparent background for the answer */
+    padding: 10px; /* Add padding to the answer */
+    border-radius: 5px; /* Add border radius to the answer */
+    min-height: 50px; /* Ensure minimum height of the answer box */
+}
+
+#message {
+    margin-top: 20px; /* Margin above the message */
+    font-size: 16px; /* Font size for the message */
+    color: #5B5A5B; /* Font color for the message */
+    display: none; /* Hide the message initially */
+}
+
+/* Add these styles at the end of your existing CSS */
+
+#activity {
+    margin-top: 40px;
+    font-size: calc(100% + 20px);
+    color: #fff;
+    background-color: rgba(91, 90, 91, 0.8);
+    padding: 20px;
+    border-radius: 5px;
+    min-height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.activity-text {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.encouragement {
+    font-size: 18px;
+    font-style: italic;
+}
+.top-right-image {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 200px; 
+    height: 200px;
+    z-index: 1000;
+    mix-blend-mode: multiply; 
+}
+.activity-link {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.activity-link a {
+    color: inherit; 
+    text-decoration: underline; 
+}
+
+.activity-link a:hover {
+    text-decoration: none; 
+}
+.activity-comment {
+    margin-top: 10px;
+    font-size: 15px;
+    font-style: italic;
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 14px;
+    color: #5B5A5B;
+}
+
+.email-contact {
+    text-align: center;
+    margin: 0;
+}
+
+footer a {
+    color: #5B5A5B;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.x-icon {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    font-size: 28px;
+    color: #5B5A5B;
+    text-decoration: none !important;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.x-icon:hover {
+    opacity: 0.7;
+}
