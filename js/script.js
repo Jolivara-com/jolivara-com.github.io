@@ -74,7 +74,7 @@ askButton.addEventListener('click', function() {
     document.getElementById("activityBox").hidden = false;
 
     // Change button text
-    askButton.textContent = "Ask again";
+    document.getElementById("activityButtonText").textContent = "Ask again";
     
     // Show rating after a delay (if you've implemented the rating system)
     setTimeout(() => {
