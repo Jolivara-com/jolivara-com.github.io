@@ -1,4 +1,12 @@
 
 body {
-    background-color: #FFFAF5; /* Background color */
+    background-color: #FFFCFA; /* Background color */
 }
+.logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-container span {
+    margin-left: 10px; /* Adjust this value to control the space between logo and text */
+  }

@@ -32,7 +32,7 @@ const allActivities = [
     {text: "Try a new healthy recipe",link: null},
     {text: "Watch a video about space",link: null},
     {text: "Look through your childhood photos",link: null},
-    {text: "Do a puzzle or brain teaser", link: "https://www.nytimes.com/games/wordle/index.html", comment: "Try out this amazing puzzle!"},
+    {text: "Do a puzzle or brain teaser", link: "https://www.nytimes.com/games/wordle/index.html", comment: "Try out this amazing word puzzle!"},
     {text: "Go stargazing or cloud watching for 10 minutes",link: null},
     {text: "Watch your favorite movie",link: null},    
         
@@ -59,7 +59,7 @@ function getRandomActivity() {
 askButton.addEventListener('click', function() {
     const activity = getRandomActivity();
     
-    let activityHtml = `<p class="activity-text display-6">${activity.text}</p>`;
+    let activityHtml = `<p class="activity-text display-6" style="font-weight: bold;">${activity.text}</p>`;
     
     if (activity.link) {
         activityHtml += `<p class="activity-link">Genie's Recommendation: <a href="${activity.link}" target="_blank">Click here</a></p>`;
