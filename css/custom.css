@@ -26,3 +26,29 @@ body {
   .btn-group .btn-light:focus svg {
     fill: #000;
   }
+
+  .social-icons a {
+    color: #5B5A5B;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #000;
+  }
+  
+  .social-icons svg {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+  
+  @media (max-width: 767px) {
+    footer .row {
+      flex-direction: column-reverse;
+    }
+    
+    .social-icons, footer .col-md-8 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+  }
