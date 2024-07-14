@@ -6,7 +6,23 @@ body {
     display: flex;
     align-items: center;
   }
+  .btn-group .btn-light {
+    color: #5B5A5B;
+    background-color: transparent;
+    border-color: transparent;
+  }
   
-  .logo-container span {
-    margin-left: 10px; /* Adjust this value to control the space between logo and text */
+  .btn-group .btn-light:hover,
+  .btn-group .btn-light:focus {
+    color: #000;
+    background-color: rgba(91, 90, 91, 0.1);
+  }
+
+  .btn-group .btn-light svg {
+    fill: #5B5A5B;
+  }
+  
+  .btn-group .btn-light:hover svg,
+  .btn-group .btn-light:focus svg {
+    fill: #000;
   }

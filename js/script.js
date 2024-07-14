@@ -59,7 +59,7 @@ function getRandomActivity() {
 askButton.addEventListener('click', function() {
     const activity = getRandomActivity();
     
-    let activityHtml = `<p class="activity-text display-6" style="font-weight: bold;">${activity.text}</p>`;
+    let activityHtml = `<h2 class="activity-text h2">${activity.text}</h2>`;
     
     if (activity.link) {
         activityHtml += `<p class="activity-link">Genie's Recommendation: <a href="${activity.link}" target="_blank">Click here</a></p>`;
