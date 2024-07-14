@@ -27,28 +27,39 @@ body {
     fill: #000;
   }
 
+  .social-icons {
+    display: flex;
+    align-items: center;
+  }
+  
   .social-icons a {
     color: #5B5A5B;
     font-size: 1.2rem;
     transition: color 0.3s ease;
+    text-decoration: none;
   }
   
   .social-icons a:hover {
     color: #000;
   }
   
+  /* Ensure the SVG for X (Twitter) icon is the right size */
   .social-icons svg {
     width: 1.2rem;
     height: 1.2rem;
   }
   
   @media (max-width: 767px) {
-    footer .row {
-      flex-direction: column-reverse;
+    .navbar-brand {
+      font-size: 1rem;
     }
     
-    .social-icons, footer .col-md-8 {
-      text-align: center;
-      margin-bottom: 1rem;
+    .social-icons a {
+      font-size: 1rem;
+    }
+    
+    .social-icons svg {
+      width: 1rem;
+      height: 1rem;
     }
   }
