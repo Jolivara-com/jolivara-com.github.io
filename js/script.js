@@ -56,30 +56,48 @@ function getRandomActivity() {
     return activity;
 }
 
-askButton.addEventListener('click', function() {
-    const activity = getRandomActivity();
+document.addEventListener('DOMContentLoaded', function() {
+    // Initialize progress tracker
+    const progressTracker = new ProgressTracker();
     
-    let activityHtml = `<h2 class="activity-text h2">${activity.text}</h2>`;
-    
-    if (activity.link) {
-        activityHtml += `<p class="activity-link">Genie's Recommendation: <a href="${activity.link}" target="_blank">Click here</a></p>`;
-    }
-    
-    if (activity.comment) {
-        activityHtml += `<p class="activity-comment"><em>${activity.comment}</em></p>`;
-    }
+    // Get DOM elements
+    const askButton = document.getElementById('askButton');
+    const activityBox = document.getElementById('activityBox');
+    const activityText = document.getElementById('activity');
+    const completeButton = document.getElementById('completeActivity');
+    const message = document.getElementById('message');
+
+    askButton.addEventListener('click', function() {
+        // Clear any previous messages
+        message.textContent = '';
         
-    activityElement.innerHTML = activityHtml;
-
-    document.getElementById("activityBox").hidden = false;
-
-    // Change button text
-    document.getElementById("activityButtonText").textContent = "Ask again";
-    
-    // Show rating after a delay (if you've implemented the rating system)
-    setTimeout(() => {
-        ratingElement.style.display = 'block';
-    }, 2000);
+        // Get a random activity
+        const activity = getRandomActivity();
+        
+        // Generate activity HTML
+        let activityHtml = `<h2 class="activity-text h2">${activity.text}</h2>`;
+        
+        if (activity.link) {
+            activityHtml += `<p class="activity-link">Genie's Recommendation: <a href="${activity.link}" target="_blank">Click here</a></p>`;
+        }
+        
+        if (activity.comment) {
+            activityHtml += `<p class="activity-comment"><em>${activity.comment}</em></p>`;
+        }
+        
+        // Update the activity text
+        activityText.innerHTML = activityHtml;
+        
+        // Show activity box and complete button
+        activityBox.removeAttribute('hidden');
+        completeButton.removeAttribute('hidden');
+        
+        // Enable ask button (in case it was disabled)
+        askButton.removeAttribute('disabled');
+        
+        // Change button text
+        document.getElementById("activityButtonText").textContent = "Ask again";
+    });
 });
 
 const shareButton = document.getElementById('shareButton');
